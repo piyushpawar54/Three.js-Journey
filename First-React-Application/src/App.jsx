@@ -1,5 +1,6 @@
-import Clicker from './Clicker';
 import { useEffect, useState } from 'react';
+import Clicker from './Clicker';
+import People from './People';
 
 export default function App({ children }) {
   const [hasClicker, setHasClicker] = useState(true);
@@ -11,12 +12,7 @@ export default function App({ children }) {
   // ...
   return (
     <>
-      {/* ... */}
-
-      <div>Total count: {count}</div>
-      <Clicker increment={increment} />
-
-      {/* ... */}
+      <People />
     </>
   );
 }
